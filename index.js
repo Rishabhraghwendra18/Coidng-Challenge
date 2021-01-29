@@ -57,7 +57,7 @@ function solution(D) {
 
                   }
                   else{
-                         mean=(day[i-1]+0)/2;
+                         mean=(daySum[i-1]+0)/2;
                   }
                   daySum[i]=mean;
             }
@@ -90,13 +90,5 @@ function solution(D) {
       }
       return newD;
 }
-let testing={
-      "2020-01-01":6,
-      "2020-01-04":12,
-      "2020-01-03":6,
-      "2020-01-05":14,
-      "2020-01-06":2,
-      "2020-01-07":4     
-}
-let res=solution(testing);
-console.log(res);
+
+module.exports=solution;
